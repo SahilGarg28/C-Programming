@@ -3,16 +3,22 @@
 
 int main()
 {
-    int n,n1,r,sum=0;
+    int n,n1,r,sum=0,digit=0;
     
     printf("Enter n:");
     scanf("%d",&n);
     
     n1=n;
+    int n2=n;
+    while(n2!=0)
+    {
+        n2=n2/10;
+        digit++;
+    }
     while(n1!=0)
     {
         r=n1%10;
-        sum=sum+pow(r,3);
+        sum=sum+pow(r,digit);
         n1=n1/10;
     }
     if(sum==n)
