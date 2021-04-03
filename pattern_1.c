@@ -11,7 +11,7 @@ b
 #include<stdio.h>
 int main()
 {
-    int n,r,c,x=1;
+    int n,r,c;
     printf("Enter N: ");//3
     scanf("%d",&n);
     
